@@ -16,16 +16,15 @@ public static class ItemDropshipPatch {
                 deliveringOrder: true,
             } or {
                 itemsToDeliver.Count: > 0,
-            })
-            return;
+            }) return;
 
         if (__instance.terminalScript is not {
                 orderedItemsFromTerminal.Count: > 0,
-            })
-            return;
+            } and not {
+                vehicleInDropship: true,
+            }) return;
 
-        if (__instance.shipTimer >= FastDropShip.shipLandTimer.Value && !reset)
-            return;
+        if (__instance.shipTimer >= FastDropShip.shipLandTimer.Value && !reset) return;
 
         __instance.shipTimer = FastDropShip.shipLandTimer.Value;
         reset = false;
