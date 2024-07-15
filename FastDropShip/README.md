@@ -8,3 +8,5 @@ Also, everytime you buy another item, the timer is reset, giving you enough time
 package ^^
 
 *You need to be the host in order for this mod to take effect*
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P6ZWLCY)
