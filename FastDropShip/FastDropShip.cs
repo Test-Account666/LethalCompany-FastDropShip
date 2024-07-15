@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
+using FastDropShip.Dependencies;
 using HarmonyLib;
 
 namespace FastDropShip;
@@ -17,10 +18,15 @@ public class FastDropShip : BaseUnityPlugin {
         Logger = base.Logger;
         Instance = this;
 
+        if (DependencyChecker.IsLobbyCompatibilityInstalled()) {
+            Logger.LogInfo("Found LobbyCompatibility, enabling support for it :)");
+            LobbyCompatibilitySupport.Initialize();
+        }
+
         shipLeaveWait = Config.Bind("General", "Ship leave wait seconds", 0F,
                                     new ConfigDescription("Defines how long the dropship waits before leaving after items were fetched",
                                                           new AcceptableValueRange<float>(0F, 4F)));
-        
+
         shipLandTimer = Config.Bind("General", "Ship land timer", 37F,
                                     new ConfigDescription("Defines how fast the ship lands. The higher, the faster",
                                                           new AcceptableValueRange<float>(0F, 40F)));
