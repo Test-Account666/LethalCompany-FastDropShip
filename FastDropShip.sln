@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastDropShip", "FastDropShip\FastDropShip.csproj", "{692D1721-4F46-4DDE-BFC5-D99EF11ABC9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastDropShip", "FastDropShip\FastDropShip.csproj", "{FAD7FA5B-9123-49EF-B5F6-FA5B78DE9E71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{692D1721-4F46-4DDE-BFC5-D99EF11ABC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{692D1721-4F46-4DDE-BFC5-D99EF11ABC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{692D1721-4F46-4DDE-BFC5-D99EF11ABC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{692D1721-4F46-4DDE-BFC5-D99EF11ABC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD7FA5B-9123-49EF-B5F6-FA5B78DE9E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD7FA5B-9123-49EF-B5F6-FA5B78DE9E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD7FA5B-9123-49EF-B5F6-FA5B78DE9E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD7FA5B-9123-49EF-B5F6-FA5B78DE9E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
